@@ -1,0 +1,37 @@
+//create package.json under pureapp folder
+//npm install --save-dev nodemon
+//nodemon auto stop and restart server when developer made changes.
+
+{
+  "name": "pureapp",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This is a Buddist products online store",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svahaGirl/JS-React-Node-MongoDB-Pureland.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "React",
+    "Node",
+    "MongoDB"
+  ],
+  "author": "Ying",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svahaGirl/JS-React-Node-MongoDB-Pureland/issues"
+  },
+  "homepage": "https://github.com/svahaGirl/JS-React-Node-MongoDB-Pureland#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.12"
+  }
+}
