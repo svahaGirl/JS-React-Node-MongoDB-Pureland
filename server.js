@@ -6,6 +6,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
+import orderRouter from './routers/orderRouter.js';
 
 //create a handler
 //create another api:....id
@@ -23,6 +24,7 @@ mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/pureapp', {
 
     app.use('/api/users', userRouter);
     app.use('/api/products', productRouter);
+    app.use('/api/orders', orderRouter);
 
 
     app.get('/', (req, res) => {
